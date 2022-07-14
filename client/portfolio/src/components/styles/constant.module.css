@@ -1,0 +1,186 @@
+
+
+p{
+    margin: 0;
+}
+
+.scrolInfor {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+.scrolInfor::-webkit-scrollbar { 
+    display: none;  
+}
+
+
+
+
+aside{
+    padding-top: 20px;
+    height: 100%;
+    position: relative;
+    background-color: rgb(32,32,42);
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 1.1rem;
+    -webkit-box-shadow: 2px 0px 20px -10px rgba(0,0,0,0.8); 
+    box-shadow: 2px 0px 20px -10px rgba(0,0,0,0.8);
+}
+
+@media only screen and (min-width: 1200px) {
+    aside{
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    aside{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    aside{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    aside{
+        display: none;
+    }
+}
+
+/* Scroll section */
+
+.scrolInfor{
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+}
+
+/* First section with photo */
+
+.introduction{
+    padding: 10px 0;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(45,43,57);
+    color: rgb(140,140,142);
+    border-radius: 20px;
+}
+
+
+.face{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.introText{
+    text-align: center;
+}
+
+/* Personal information */
+
+.personalInfo{
+    margin: 10px 0;
+    width: 80%;
+    color: rgb(140,140,142); 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textInfoR{
+    text-align: end;
+}
+td{
+    font-size: 1.1rem;
+}
+
+/* Devider */
+
+hr{
+    width: 80%;
+    color: rgb(166, 166, 167);
+}
+
+/* Round progress bar for languages */
+
+.progressRoundContainer{
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.progressRound{
+    width: 70px;
+}
+
+.langColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(166, 166, 167);
+    gap: 10px;
+}
+
+/* Progress line */
+
+.progressLineContainer{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.progressLineText{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(166, 166, 167);
+}
+.progressLine{
+    width: 100%;
+    accent-color: rgb(255,159,68);
+}
+
+/* Social media bar */
+
+.socialMediaBar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(37,37,49);
+    width: 100%;
+    bottom: 0px;
+    padding: 10px 0;
+    position: sticky;
+}
+
+.iconMedia{
+    width: 30px;
+    filter: grayscale(100%);
+    transition: all 0.2s ease-in;
+}
+
+.iconMedia:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}  
+
+
+
