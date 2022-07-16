@@ -1,7 +1,7 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import styles from '../components/styles/constant.module.css';
+import styles from '../components/styles/leftInfo.module.css';
 
 function ProgressRound(props) {
     const percentage = props.value;

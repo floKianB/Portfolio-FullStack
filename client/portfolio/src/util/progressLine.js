@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../components/styles/constant.module.css';
+import styles from '../components/styles/leftInfo.module.css';
 
 
 function ProgressLine(props) {

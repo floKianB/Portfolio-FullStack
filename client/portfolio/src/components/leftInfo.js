@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from './styles/constant.module.css';
+import styles from './styles/leftInfo.module.css';
+
 
 import ProgressRound from '../util/progressRound';
 import ProgressLine from '../util/progressLine';
@@ -10,10 +11,14 @@ import instagram from '../images/instagramColor.png';
 import youtube from '../images/youtubeColor.png';
 import github from '../images/githubColor.png';
 import linkedin from '../images/linkedinColor.png';
+import moreIcon from '../images/moreIcon.png';
 
-function NavigationBar() {
+function LeftInfo() {
     return (
         <>
+        <div className={styles.moreInfoButton}>
+            <img className={styles.moreIcon} src={moreIcon} alt={moreIcon} />
+        </div>
         <aside>
             <div className={styles.introduction}>
                 <img src={face} alt="Kian" className={styles.face}/>
@@ -73,10 +78,10 @@ function NavigationBar() {
                 <img src={linkedin} alt={linkedin} className={styles.iconMedia}/>
             </div>
         </aside>
-
+        
         </>
         
     );
 }
 
-export default NavigationBar
+export default LeftInfo;
