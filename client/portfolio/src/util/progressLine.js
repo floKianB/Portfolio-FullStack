@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from '../components/styles/leftInfo.module.css';
+import '../components/styles/CSS/Constants/leftInfo/leftInfo.css';
 
 
 function ProgressLine(props) {
     return (
         <>
-        <div className={styles.progressLineText}>
-            <label>{props.label}</label>
-            <p>{props.value}%</p>
+        <div className="progressLineText">
+            <label className="label" >{props.label}</label>
+            <p className="valuepercentage" >{props.value}%</p>
         </div>
-        <progress value={props.value} max="100" className={styles.progressLine}></progress>
+        <progress value={props.value} max="100" className="progressLine"></progress>
         </>
         
     )

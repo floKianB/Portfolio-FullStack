@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../styles/blogs/blogs.module.css';
+
 import Banner from '../banner';
 import bannerPic from '../../images/banner2.png';
+
 
 import EachBlog from './eachBlog';
 
@@ -17,7 +19,9 @@ function Blogs() {
 
     return (
         <>
-            <div class={styles.content}>
+            <div class={styles.content}
+                intial = {{opacity: 0}} animate = {{opacity: 1}} exit = {{opacity: 1}}
+            >
                 <Banner banner={bannerPic}/>
                 <div className={styles.blogs}>
                     {

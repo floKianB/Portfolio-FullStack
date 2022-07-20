@@ -1,0 +1,8 @@
+@media screen and (min-width: 1023px){
+    .BannerContainer{
+        display: flex;
+    }
+    .BannerContainerSmallScreen, .bannerSmall{
+        display: none;
+    }
+}

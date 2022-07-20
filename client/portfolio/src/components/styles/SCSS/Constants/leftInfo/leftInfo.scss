@@ -1,6 +1,18 @@
+p{
+    margin: 0;
+}
+.scrolInfo {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+.scrolInfo::-webkit-scrollbar { 
+    display: none;  
+}
+
 aside{
     padding-top: 20px;
     height: 100%;
+    min-width: 200px;
     position: relative;
     background-color: rgb(32,32,42);
     width: 22.5%;
@@ -31,26 +43,9 @@ aside{
 
 
 
-
-
-
-p{
-    margin: 0;
-}
-
-.scrolInfor {
-    -ms-overflow-style: none;
-    scrollbar-width: none;  
-}
-.scrolInfor::-webkit-scrollbar { 
-    display: none;  
-}
-
-
-
 /* Scroll section */
 
-.scrolInfor{
+.scrolInfo{
     padding: 10px 0;
     height: 100%;
     width: 100%;
@@ -66,7 +61,7 @@ p{
 /* First section with photo */
 
 .introduction{
-    padding: 10px 0;
+    padding: 15px 5px;
     width: 80%;
     display: flex;
     gap: 20px;
@@ -82,8 +77,8 @@ p{
 
 
 .face{
-    height: 130px;
-    width: 130px;
+    height: 125px;
+    width: 125px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -127,7 +122,7 @@ hr{
     align-items: center;
 }
 .progressRound{
-    width: 70px;
+    width: 85%;
 }
 
 .langColumn{
@@ -181,29 +176,6 @@ hr{
 }  
 
 
-
-@media only screen and (min-width: 1200px) {
-    aside{
-        width: 22%;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    aside{
-        width: 25%;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    aside{
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    aside{
-        display: none;
-    }
-    .moreIcon{
-        display: flex;
-    }
-}
+@import './phone/leftInfo_phone';
+@import './tablet/leftInfo_tablet';
+@import './laptop/leftInfo_laptop';

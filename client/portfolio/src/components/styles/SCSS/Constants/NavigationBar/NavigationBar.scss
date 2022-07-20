@@ -27,7 +27,6 @@
     box-shadow: -2px 0px 20px -10px rgba(0,0,0,0.8);
     z-index: 2;
     transition: all 0.4s ease-in;
-
 }
 
 .closeIconContainer{
@@ -82,6 +81,14 @@
     -webkit-animation: apear 0.25s linear 1  forwards;
     animation: apear 0.25s linear 1  forwards;
 }
+
+.currentPage{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgb(255,158,68);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
 .disaplearCurrentPage{
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -91,7 +98,6 @@
     -webkit-animation: disapear 0.25s linear 1  forwards;
     animation: disapear 0.25s linear 1  forwards;
 }
-
 
 .iconMoreNavContainer{
     display: none;
@@ -148,23 +154,8 @@ li{
     75%{opacity: 0.75}
     100%{ opacity: 1}
 }
+@import './phone/Navigation_phone';
+@import './tablet/Navigation_tablet';
+@import './laptop/Navigation_laptop';
 
-@media only screen and (min-width: 1200px) {
-    
-}
 
-@media only screen and (max-width: 1199px) {
-    
-}
-@media only screen and (max-width: 1024px) {
-    
-}
-
-@media only screen and (max-width: 768px) {
-    nav{
-        display: none;
-    }
-    .iconMoreNavContainer{
-        display: flex;
-    }
-}

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/leftInfo.module.css';
+import './styles/CSS/Constants/leftInfo/leftInfo.css';
 
 
 import ProgressRound from '../util/progressRound';
@@ -16,44 +16,44 @@ import moreIcon from '../images/moreIcon.png';
 function LeftInfo() {
     return (
         <>
-        <div className={styles.moreInfoButton}>
+        {/* <div className={styles.moreInfoButton}>
             <img className={styles.moreIcon} src={moreIcon} alt={moreIcon} />
-        </div>
+        </div> */}
         <aside>
-            <div className={styles.introduction}>
-                <img src={face} alt="Kian" className={styles.face}/>
-                <p className={styles.introText}>MERN Stack Developer <br/> Flutter Developer</p>
+            <div className="introduction">
+                <img className="face" src={face} alt="Kian"/>
+                <p className="introText">MERN Stack Developer <br/> Flutter Developer</p>
             </div>
-            <div className={styles.scrolInfor}>
-                <div className={styles.personalInfo}>
+            <div className="scrolInfo">
+                <div className="personalInfo">
                     <table>
                         <tr>
                             <td>Recidance:</td>
-                            <td className={styles.textInfoR}>Canada</td>
+                            <td className="textInfoR">Canada</td>
                         </tr>
                         <tr>
                             <td>City:</td>
-                            <td className={styles.textInfoR}>Toronto</td>
+                            <td className="textInfoR">Toronto</td>
                         </tr>
                         <tr>
                             <td>Age:</td>
-                            <td className={styles.textInfoR}>19</td>
+                            <td className="textInfoR">19</td>
                         </tr>
                     </table>
                 </div>
 
                 <hr />
 
-                <div className={styles.progressRoundContainer}>
-                    <div className={styles.langColumn}>
+                <div className="progressRoundContainer">
+                    <div className="langColumn">
                         <ProgressRound value = {70}/>
                         <p>Kurdi</p>
                     </div>
-                    <div className={styles.langColumn}>
+                    <div className="langColumn">
                         <ProgressRound value = {90}/>
                         <p>Farsi</p>
                     </div>
-                    <div className={styles.langColumn}>
+                    <div className="langColumn">
                         <ProgressRound value = {85}/>
                         <p>English</p>
                     </div>
@@ -61,7 +61,7 @@ function LeftInfo() {
 
                 <hr />
 
-                <div className={styles.progressLineContainer}>
+                <div className="progressLineContainer">
                     <ProgressLine value = {95} label = "HTML5" />
                     <ProgressLine value = {80} label = "CSS3" />
                     <ProgressLine value = {90} label = "JS" />
@@ -71,11 +71,11 @@ function LeftInfo() {
                     <ProgressLine value = {85} label = "React js" />
                 </div>
             </div>
-            <div className={styles.socialMediaBar}>
-                <img src={instagram} alt={instagram} className={styles.iconMedia}/>
-                <img src={youtube} alt={youtube} className={styles.iconMedia}/>
-                <img src={github} alt={github} className={styles.iconMedia}/>
-                <img src={linkedin} alt={linkedin} className={styles.iconMedia}/>
+            <div className="socialMediaBar">
+                <img src={instagram} alt={instagram} className="iconMedia"/>
+                <img src={youtube} alt={youtube} className="iconMedia"/>
+                <img src={github} alt={github} className="iconMedia"/>
+                <img src={linkedin} alt={linkedin} className="iconMedia"/>
             </div>
         </aside>
         
